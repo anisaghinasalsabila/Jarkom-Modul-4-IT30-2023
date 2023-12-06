@@ -81,3 +81,252 @@ Berdasarkan total IP dan netmask yang dibutuhkan, Subnet besar yang dibentuk mem
 
 # Mengatur Network Configuration masing-masing interface pada setiap perangkat
 Sesuaikan network configuration node pada GNS3 sebagai berikut sesuai dengan interface yang dibuat pada topologi:
+
+- Aura
+```
+auto eth0
+iface eth0 inet dhcp
+
+#A14
+auto eth1
+iface eth1 inet static
+  address 192.250.128.2
+  netmask 255.255.255.252
+
+#A4
+auto eth2
+iface eth2 inet static
+  address 192.249.1.1
+  netmask 255.255.255.252
+
+#A7
+auto eth3
+iface eth3 inet static
+  address 192.248.128.2
+  netmask 255.255.255.252
+```
+- Denken
+```
+auto eth0
+iface eth0 inet static
+  address 192.249.1.1
+  netmask 255.255.255.252
+
+#A1
+auto eth1
+iface eth1 inet static
+  address 192.249.0.1
+  netmask 255.255.255.0
+```
+-Eisen
+```
+#A7
+auto eth0
+iface eth0 inet static
+  address 192.248.128.2
+  netmask 255.255.255.252
+
+#A5
+auto eth1
+iface eth1 inet static
+  address 192.248.16.1
+  netmask 255.255.255.252
+
+#A13
+auto eth2
+iface eth2 inet static
+  address 10.69.8.1
+  netmask 255.255.255.248
+
+#A8
+auto eth3
+iface eth3 inet static
+  address 10.69.48.1
+  netmask 255.255.255.252
+
+#A6
+auto eth4
+iface eth4 inet static
+  address 10.69.64.1
+  netmask 255.255.255.252
+```
+- Fern
+```
+#A17
+auto eth0
+iface eth0 inet static
+  address 192.250.16.2
+  netmask 255.255.255.252
+
+#A18
+auto eth1
+iface eth1 inet static
+  address 192.250.8.1
+  netmask 255.255.248.0
+```
+- Flamme
+```
+#A16
+auto eth0
+iface eth0 inet static
+  address 192.250.32.2
+  netmask 255.255.255.252
+
+#A17
+auto eth1
+iface eth1 inet static
+  address 192.250.16.1
+  netmask 255.255.255.252
+
+#A21
+auto eth2
+iface eth2 inet static
+  address 192.250.0.17
+  netmask 255.255.252.0
+
+#A19
+auto eth3
+iface eth3 inet static
+  address 192.250.0.1
+  netmask 255.255.255.252
+```
+- Frieren
+```
+#A14
+auto eth0
+iface eth0 inet static
+  address 192.250.128.3
+  netmask 255.255.255.252
+
+#A15
+auto eth1
+iface eth1 inet static
+  address 192.250.64.1
+  netmask 255.255.255.224
+
+#A16
+auto eth2
+iface eth2 inet static
+  address 192.250.32.1
+  netmask 255.255.255.252
+```
+- Heiter
+```
+#A11
+auto eth0
+iface eth0 inet static
+	address 192.248.40.3
+	netmask 255.255.255.252
+
+#A12
+auto eth1
+iface eth1 inet static
+  address 192.248.36.1
+  netmask 255.255.252.0
+```
+- Himmel
+```
+#A19
+auto eth0
+iface eth0 inet static
+  address 192.250.0.2
+  netmask 255.255.255.252
+
+#A20
+auto eth1
+iface eth1 inet static
+  address 192.250.0.5
+  netmask 255.255.255.248
+```
+- Lawine
+```
+#A10
+auto eth0
+iface eth0 inet static
+  address 192.248.32.2
+  netmask 255.255.255.252
+
+#A11
+auto eth1
+iface eth1 inet static
+  address 192.248.40.1
+  netmask 255.255.255.252
+```
+- Linie
+```
+#A8
+auto eth0
+iface eth0 inet static
+  address 192.248.48.2
+  netmask 255.255.255.252
+
+#A10
+auto eth1
+iface eth1 inet static
+  address 192.248.32.1
+  netmask 255.255.255.252
+
+#A9
+auto eth2
+iface eth2 inet static
+  address 192.248.34.1
+  netmask 255.255.254.0
+```
+- Lugner
+```
+#A6
+auto eth0
+iface eth0 inet static
+  address 192.248.8.2
+  netmask 255.255.255.252
+
+#A3
+auto eth1
+iface eth1 inet static
+  address 192.248.4.1
+  netmask 255.255.255.0
+
+#A2
+auto eth2
+iface eth2 inet static
+  address 192.248.0.1
+  netmask 255.255.252.0
+```
+
+Server
+
+- Stark
+```
+auto eth0
+iface eth0 inet static
+	address 192.248.16.2
+	netmask 255.255.255.252
+	gateway 192.248.16.1
+```
+- Sein
+```
+auto eth0
+iface eth0 inet static
+	address 192.248.36..2
+	netmask 255.255.252.0
+	gateway 192.248.36..1
+```
+- Revolte
+ ```
+auto eth0
+iface eth0 inet static
+	address 192.248.64.2
+	netmask 255.255.255.248
+	gateway 192.248.64.1
+ ```
+- Reichter
+```
+auto eth0
+iface eth0 inet static
+	address 192.248.64.3
+	netmask 255.255.255.248
+	gateway 192.248.64.1
+```
+
+## Kendala
+Belum selesai konfigurasi conf
